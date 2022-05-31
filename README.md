@@ -64,7 +64,7 @@ import { RadarChart } from "skills-radar-chart";
 
 ***
 ## CodeSandBox Sample
-[Skills Radar Chart]https://codesandbox.io/s/radar-chart-jjhctz
+[Skills Radar Chart]https://codesandbox.io/s/skills-radar-chart-nzbjxi
 
 
 ## Contributing

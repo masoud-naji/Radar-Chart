@@ -1,6 +1,6 @@
 {
   "name": "skills-radar-chart",
-  "version": "1.1.4",
+  "version": "1.0.1",
   "description": "Skills Radar Chart a React library for Easy creating Radar Chart for showing your data such as skills.",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -15,30 +15,18 @@
     "url": "git+ssh://git@github.com:masoud-naji/Radar-Chart.git"
   },
   "keywords": [
-    "JSON",
-    "pretty",
-    "pretty-json",
-    "json-pretty",
-    "json-pretty-textarea",
-    "json-pretty-component",
-    "json-pretty-react",
-    "json-pretty-react-component",
-    "json-pretty-react-textarea",
-    "json-pretty-react-component-textarea",
-    "json Pretty",
-    "JSON Pretty",
-    "json pretty Component",
-    "JSON pretty Component",
-    "JSON pretty Textarea",
-    "json pretty Textarea",
-    "json pretty textarea"
+    "Radar Chart",
+    "Skill Radar Chart",
+    "Radar Chart Skills",
+    "Chart",
+    "Skills Chart"
   ],
   "author": "Masoud Naji",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/masoud-naji/NPM-json-pretty-Component/issues"
+    "url": "https://github.com/masoud-naji/Radar-Chart/issues"
   },
-  "homepage": "https://github.com/masoud-naji/NPM-json-pretty-Component#readme",
+  "homepage": "https://github.com/masoud-naji/Radar-Chart#readme",
   "devDependencies": {
     "@babel/core": "^7.18.2",
     "@babel/preset-react": "^7.17.12",
@@ -68,6 +56,7 @@
     "chart.js": "^3.8.0",
     "react-chartjs-2": "^4.1.0",
     "rollup-plugin-local-resolve": "^1.0.7",
-    "rollup-plugin-terser": "^7.0.2"
+    "rollup-plugin-terser": "^7.0.2",
+    "skills-radar-chart": "^1.0.1"
   }
 }
