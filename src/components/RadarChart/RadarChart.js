@@ -29,7 +29,7 @@ export function RadarChart({
   borderWidth,
   angleLines,
   grid,
-  pointLabel,
+  pointLabels,
   ticks,
   ShowLegend,
 }) {
@@ -53,6 +53,10 @@ export function RadarChart({
         backgroundColor: backgroundColor,
         borderColor: borderColor,
         borderWidth: borderWidth,
+        pointBackgroundColor: "rgb(54, 162, 235)",
+        pointBorderColor: "#fff",
+        pointHoverBackgroundColor: "#fff",
+        pointHoverBorderColor: "rgb(54, 162, 235)",
       },
     ],
   };
@@ -63,6 +67,10 @@ export function RadarChart({
     options: {
       plugins: {
         legend: ShowLegend,
+
+        labels: {
+          color: "blue",
+        },
       },
       scales: {
         r: {
@@ -72,8 +80,8 @@ export function RadarChart({
           grid: {
             color: grid,
           },
-          pointLabel: {
-            color: pointLabel,
+          pointLabels: {
+            color: pointLabels,
           },
           ticks: {
             color: ticks,

@@ -16,7 +16,7 @@ stories.add("App", () => (
     borderWidth="1"
     angleLines="rgba(255, 99, 132, 0.2)"
     grid="red"
-    pointLabel="red"
+    pointLabels="red"
     ticks="red"
     ShowLegend={false}
   />
