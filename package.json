@@ -1,6 +1,6 @@
 {
   "name": "skills-radar-chart",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Skills Radar Chart a React library for Easy creating Radar Chart for showing your data such as skills.",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
