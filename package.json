@@ -1,7 +1,7 @@
 {
-  "name": "json-pretty-textarea",
+  "name": "skills-radar-chart",
   "version": "1.1.4",
-  "description": "JSON pretty Component , can use directly on React projects to show your json in textarea component with controlling font size and color of everything",
+  "description": "Skills Radar Chart a React library for Easy creating Radar Chart for showing your data such as skills.",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "scripts": {
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/masoud-naji/NPM-json-pretty-Component.git"
+    "url": "git+ssh://git@github.com:masoud-naji/Radar-Chart.git"
   },
   "keywords": [
     "JSON",

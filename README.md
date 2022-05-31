@@ -1,6 +1,6 @@
-# JSON pretty Textarea
+# Skills Radar Chart
 
-JSON pretty Textareais a React library for dealing with json files and showing them on textarea.
+Skills Radar Chart a React library for Easy creating Radar Chart for showing your data such as skills.
 
   [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
   
@@ -10,7 +10,7 @@ JSON pretty Textareais a React library for dealing with json files and showing t
 Use the package manager [npm](https://www.npmjs.com/) to install json-pretty-textarea.
 
 ```bash
-npm i json-pretty-textarea
+npm i skills-radar-chart
 ```
 
 
@@ -19,88 +19,52 @@ npm i json-pretty-textarea
 
 ```React
 # import 
-import { JsonPrettierTextarea } from "json-pretty-textarea";
+import { RadarChart } from "skills-radar-chart";
 ```
 ```React
 # return
- <JsonPrettierTextarea
-              prettyjson={MockDocument}
-              preBcl="white"
-              stringCl="blue"
-              numberCl="blue"
-              booleanCl="red"
-              nullCl="violet"
-              keyCl="red"
-              string_font_size="1rem"
-              number_font_size="1rem"
-              boolean_font_size="1rem"
-              null_font_size="1rem"
-              key_font_size="1rem"
-              height="300px"
-              width="300px"
-              borderRadius="10px"
-            />
+  <RadarChart
+    rawData={SkillsArray}
+    skillPercentage="skillPercentage"
+    skillName="skillName"
+    label="Skills"
+    backgroundColor="rgba(255, 99, 132, 0.2)"
+    borderColor="rgba(255, 99, 132, 1)"
+    borderWidth="1"
+    angleLines="rgba(255, 99, 132, 0.2)"
+    grid="red"
+    pointLabel="red"
+    ticks="red"
+    ShowLegend={false}
+  />
 ```
 ---
 
-![alt text](https://dub01pap003files.storage.live.com/y4m30TStT9GjkJ8CQsKTJ8f6CpRcTucFQI2NDeV5IKdWDx3LOXX-_IjAzWofcsE9xTnFVBeOwtO7HhxpdDPg6v2SrV8scH3NghHvuegxEbRYfpyhGxrsg8nA6wv4QwIEPIcP-M9NrPKcq2fyD2Ucs8ZddNeIxlFNS3FE2ynxj9bA0s14iCDzDOnxACR_Y0y2fDc?width=607&height=504&cropmode=none "Logo Title Text 1")
+![alt text](https://dub01pap003files.storage.live.com/y4mgiCeBPYvvJeUPWG2I6bSATYwLpYrurKo1hkI9WQcv0fd9l79Rbx8Un4KBekGp0gkSXZF8lBSVwVpbzSOoOZgnVre_tqjvQRGIThrgpnLKrtGjqDPFxObPrYFRBmxaeU0rtyiQd8fRLhuVJ77RKHwC65LApiupmoVuw5S7sdh1QSATutr6eD6egARF_8CqYU3?width=984&height=825&cropmode=none)
 
 ---
-![alt text](https://dub01pap003files.storage.live.com/y4mrjlsIlPyII1uX5xKxO4LJtSR3lQTNxtpeBsisACqsfb2VpzAAD8pcXyzjD9YU4HGilApW-023OSueLbTSgQA9cXbQDv_OPYDmfBOVPgRl1MyHUZ9iwTvV5ZT0IH-vZjqjMWGQhjp5OtStBM0oaSUum-48JaFLGmPNYKJswgl9-sEuENncbEueyDxehFvUqVV?width=660&height=410&cropmode=none "Logo Title Text 1")
 
----
 
 |    Property      |     type      |  Default   |       Description       |
 | ---------------- |:-------------:|:----------:|:-----------------------:|
-| prettyjson       | json data     |MockDocument|    Source File json     |
-| preBcl           |       CSS     |    white   |Textarea BackGround color|
-| stringCl         |       CSS     |    green   |   String Values color   |
-| numberCl         |       CSS     | darkorange |   number Values color   |
-| booleanCl        |       CSS     |     blue   |   boolean Values color  |
-| nullCl           |       CSS     |   magenta  |   null Values color     |
-| keyCl            |       CSS     |     red    |      key Values color   |
-| string_font_size |       CSS     |     1rem   |       font_size         |
-| number_font_size |       CSS     |     1rem   |        font_size        |
-| boolean_font_size|       CSS     |     1rem   |        font_size        |
-| null_font_size   |       CSS     |     1rem   |        font_size        |
-| key_font_size    |       CSS     |     1rem   |        font_size        |
-| height           |       CSS     |     100%   |    textarea height      |
-| width            |       CSS     |     100%   |    textarea width       |
-| borderRadius     |       CSS     |   0.5rem   |    border radius        |
+| rawData          | json data     |MockDocument|    Source File json     |
+| skillPercentage  |   data        |    white   |key colum  (number)      |
+| skillName        |   label       |    green   |   key colum (Name)      |
+| ShowLegend       | legend show   |     1rem   |  {true} / {false}       |
+| label            | legend Text   | darkorange |   legent text           |
+| backgroundColor  | CSS           |     blue   |        CSS Color        |
+| borderColor      | CSS           |   magenta  |        CSS Color        |
+| borderWidth      | CSS           |     red    |        CSS Color        |
+| angleLines       | CSS           |     red    |        CSS Color        |
+| grid             | CSS           |     red    |        CSS Color        |
+| pointLabel       | CSS           |     red    |        CSS Color        |
+| ticks            | CSS           |     red    |        CSS Color        |
 
-
-
-## Sample Code
-```React Code
-import MockDocument from "./MOCK_DATA.json";
-import { JsonPrettierTextarea } from "json-pretty-textarea";
-export const test = () => {
-  return (
-  <JsonPrettierTextarea
-              prettyjson={MockDocument}
-              preBcl="white"
-              stringCl="green"
-              numberCl="skyblue"
-              booleanCl="orange"
-              nullCl="violet"
-              keyCl="black"
-              string_font_size="1rem"
-              number_font_size="1rem"
-              boolean_font_size="1rem"
-              null_font_size="1rem"
-              key_font_size="1.2rem"
-              height="500px"
-              width="800px"
-              borderRadius="10px"
-            />
-  );
-};
-```
 
 
 ***
 ## CodeSandBox Sample
-[json-pretty-textarea]https://codesandbox.io/s/json-pretty-textarea-qus7dk
+[Skills Radar Chart]https://codesandbox.io/s/radar-chart-jjhctz
 
 
 ## Contributing
